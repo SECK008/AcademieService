@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <img src="{{asset('assets/images/1.jpg')}}" class="img-fluid" alt="...">
+     <div class="container-fluid">
+        <div class="row py-4">
+            <div class="col-lg-8 mx-auto shadow py-4">
+                <h3 style="text-align:center; font-size:20px;">Nous Contact</h3><br>
+                <hr>
+                <div class="container-fluid">
+                    <!-- Un Contact -->
+                        {{form(form)}}
+                    <!-- Un Contact -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
